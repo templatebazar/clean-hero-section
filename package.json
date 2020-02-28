@@ -1,0 +1,14 @@
+{
+  "name": "clean-hero-section",
+  "version": "1.0.0",
+  "description": "A clean CSS3 Hero Section",
+  "main": "index.html",
+  "scripts": {
+    "compile:sass": "node-sass sass/hero.scss css/hero.css -w"
+  },
+  "author": "Subroto Biswas",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

@@ -1,0 +1,58 @@
+$color-primary: #fed330;
+$color-white: #fff;
+$color-black: #000;
+
+/* set all elements padding and margin to zero */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  /* set 1rem equals to 10px */
+  /* 1rem = 10px */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato";
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  width: 100%;
+  height: 50rem;
+  background-color: $color-primary;
+  color: $color-black;
+  font-size: 1.6rem;
+
+  &__text {
+    width: 100%;
+    &-heading {
+      font-size: 10rem;
+      font-weight: 900;
+    }
+    &-subheading {
+      font-weight: 100;
+    }
+  }
+
+  &__cta {
+    margin-top: 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $color-black;
+    padding: 1.5rem 3rem;
+    border: 1px solid $color-black;
+    border-radius: 27px;
+    transition: all 0.4s;
+    &:hover {
+      background-color: $color-black;
+      color: $color-white;
+    }
+  }
+}
